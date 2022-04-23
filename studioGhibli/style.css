@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(135deg, #628E75, #1A4855);
+    background-repeat: no-repeat;
+    padding: 0 11vw;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    height: 20px;
+    margin: 14px 0 0 0;
+}
+
+main {
+    display: flex;
+    margin-top: 75px;
+    margin-bottom: 150px;
+}
+
+.content {
+    width: 50vw;
+}
+
+h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #F9F9F9;
+}
+
+h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 68px;
+    line-height: 109%;
+    color: #F9F9F9;
+}
+
+p {
+    margin-top: 25px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    color: #F9F9F9;
+}
+
+button {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    text-transform: uppercase;
+    margin-top: 46px;
+    width: 225px;
+    height: 45px;
+    transform: skew(-15deg);
+}
+
+button p {
+    transform: skew(15deg);
+    margin: 0;
+}
+
+button svg {
+    height: 28px;
+    position: absolute;
+    left: 30px;
+}
+
+#btn1 {
+    border: none;
+    background: #658E76;
+    margin-right: 15px;
+}
+
+#btn2 {
+    background-color: transparent;
+    border: 3px solid #658E76;
+}
+
+.image img {
+    width: 45vw;
+    margin-top: -75px;
+}
+
+@media (max-width:850px) {
+    body {
+        padding: 5vw;
+    }
+    header {
+        margin-top: 5px;
+    }
+    .icons {
+        width: 150px;
+    }
+    main {
+        flex-wrap: wrap-reverse;
+    }
+    .image img {
+        width: 100%;
+    }
+    .content {
+        width: 100vw;
+    }
+    #btn2 {
+        display: none;
+    }
+}
