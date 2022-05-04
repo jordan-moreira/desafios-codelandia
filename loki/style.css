@@ -6,9 +6,12 @@
 
 .efect {
     background: rgba(0, 0, 0, 0.7);
+    min-height: 100vh;
+    width: 100%;
 }
 
 body {
+    min-height: 100vh;
     background-image: url(imagens/fundo.svg);
     background-position: center;
     background-size: cover;
@@ -36,7 +39,7 @@ h1 {
     font-style: normal;
     font-weight: 700;
     font-size: 96px;
-    line-height: 117px;
+    line-height: 118px;
     text-align: center;
     margin-bottom: 120px;
 }
@@ -50,7 +53,8 @@ main {
 }
 
 .content {
-    margin-right: 17vw;
+    margin-right: 11%;
+    max-width: 100vw;
 }
 
 .content p {
@@ -68,7 +72,7 @@ main {
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    line-height: 29px;
+    line-height: 30px;
     margin: 45px 0;
 }
 
@@ -105,4 +109,76 @@ main {
     font-size: 16px;
     line-height: 22px;
     color: #FFFFFF;
+}
+
+.mobile p {
+    display: none;
+}
+
+@media screen and (max-width:710px) {
+    h3 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    h1 {
+        font-size: 64px;
+        line-height: 78px;
+    }
+    main {
+        display: block;
+    }
+    img.capa {
+        display: none;
+    }
+    .content {
+        margin-right: 0px;
+    }
+    .content #p1 {
+        margin: 0 24px;
+        font-size: 14px;
+        line-height: 140%;
+        display: none;
+    }
+    .info {
+        margin: 298px 24px 41px;
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .info img {
+        width: 25px;
+        height: 25px;
+    }
+    .stars img {
+        width: 20px;
+        height: 20px;
+    }
+    .mobile {
+        background-color: #19191F;
+        border-radius: 20px 20px 0px 0px;
+        height: 50vh;
+    }
+    #btn1,
+    #btn2 {
+        margin: 32px 0 0;
+        width: 40vw;
+        height: 35px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    #btn1 {
+        margin-left: 24px;
+    }
+    #btn2 {
+        margin-left: 11px;
+        margin-bottom: 0px;
+    }
+    #linha {
+        background-color: rgba(196, 196, 196, 0.08);
+        height: 1px;
+        margin: 24px 0;
+    }
+    .mobile p {
+        display: block;
+        margin-bottom: 25vh;
+    }
 }
