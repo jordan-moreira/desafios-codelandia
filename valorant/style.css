@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1F2326;
+    background-image: url(imagens/background.svg);
+    background-size: cover;
+    min-height: 100vh;
+    display: grid;
+    grid-template: "header header header" "content content phoenix" "footer footer phoenix"48px /1fr 1fr 1fr;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    grid-area: header;
+    margin: 40px 24px 35px 100px;
+}
+
+header h1 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #ffffff;
+}
+
+.content {
+    grid-area: content;
+    margin: 100px 0 0 100px;
+}
+
+.content h1 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 76px;
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+    margin-bottom: 42px;
+}
+
+.allSkins {
+    display: flex;
+}
+
+.skinBox {
+    position: relative;
+    margin: 0 20px 0 0;
+}
+
+.skin {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+}
+
+.name {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FF4656;
+    margin: 12px 0 0;
+}
+
+.phoenix {
+    grid-area: phoenix;
+    max-height: 100vh;
+    margin-right: 24px;
+}
+
+footer {
+    display: flex;
+    grid-area: footer;
+    margin-left: 100px;
+    height: 24px;
+}
+
+[twiter] {
+    margin: 0 38px;
+}
